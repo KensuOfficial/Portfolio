@@ -51,6 +51,9 @@ section {
    backdrop-filter: blur(10px);
    align-items: center;
    z-index: 5;
+   & svg {
+      height: 42px;
+   }
 }
 .logo {
    font-size: 3rem;
@@ -77,9 +80,11 @@ section {
    border-bottom: 3px solid var(--main-color);
 }
 #menu-icon {
-   font-size: 3.6rem;
-   color: var(--main-color);
+   fill: var(--main-color);
    display: none;
+}
+svg {
+   width: 70px;
 }
 
 .home {
@@ -385,7 +390,6 @@ span {
       color: var(--bg-color);
       border: 5px solid var(--main-color);
       transform: scale(1.03);
-      overflow-y: auto;
       overflow-x: hidden;
       scrollbar-width: 2px;
    }
@@ -656,3 +660,4 @@ span {
       grid-template-columns: repeat(1,1fr);
    }
 }
+
